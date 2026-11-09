@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear Cuenta"
+                android:textColor="#7D4948"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNombreReg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Ingrese Nombre(s)"
+                android:textColorHint="#C8B8B8"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etApellidoReg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Ingrese Apellido o Apellidos"
+                android:textColorHint="#C8B8B8"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matrícula"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMatriculaReg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Ingrese su matrícula"
+                android:textColorHint="#C8B8B8"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCorreoReg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Ingrese su correo estudiantil"
+                android:textColorHint="#C8B8B8"
+                android:inputType="textEmailAddress"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etContrasenaReg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Ingrese la contraseña"
+                android:textColorHint="#C8B8B8"
+                android:inputType="textPassword"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp" />
+
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Registrarse"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#7D4948" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#EBE5E5"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:layout_width="76dp"
+            android:layout_height="72dp"
+            android:rotation="90"
+            android:text="LIBRIS MOBILE"
+            android:textColor="#7D4948"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="60dp" />
+    </LinearLayout>
+
+</LinearLayout>

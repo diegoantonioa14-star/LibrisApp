@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+    <!-- FORMULARIO PRINCIPAL DE LOGIN -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true">
+
+            <!-- LOGO -->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:scaleType="fitCenter"
+                android:contentDescription="Logotipo Libris"
+                android:layout_marginBottom="24dp" />
+
+            <!-- NOMBRE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="start" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Ingrese matrícula"
+                android:textColorHint="#C8B8B8"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- CONTRASEÑA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matrícula"
+                android:textColor="#7D4948"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="start" />
+
+            <EditText
+                android:id="@+id/etContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Ingrese contraseña"
+                android:textColorHint="#C8B8B8"
+                android:inputType="textPassword"
+                android:textSize="13sp"
+                android:paddingHorizontal="12dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="28dp" />
+
+            <!-- BOTÓN INGRESAR -->
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Ingresar"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#7D4948" />
+
+        </LinearLayout>
+
+        <!-- REGISTRO -->
+        <TextView
+            android:id="@+id/tvIrRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:text="No tienes cuenta? Registrate aquí"
+            android:textColor="#C8B8B8"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <!-- FRANJA LATERAL -->
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#EBE5E5"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIBRIS MOBILE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#7D4948"
+            android:rotation="90"
+            android:translationY="60dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
