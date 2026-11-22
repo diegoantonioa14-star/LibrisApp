@@ -111,12 +111,12 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LIBRIS MOBILE"
+            android:layout_height="84dp"
+            android:rotation="90"
+            android:text="LIBRIS "
+            android:textColor="#7D4948"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#7D4948"
-            android:rotation="90"
             android:translationY="60dp" />
 
     </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.librisproyecto
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -23,19 +24,24 @@ class menu : AppCompatActivity() {
         }
 
         btnTransacciones?.setOnClickListener {
-            Toast.makeText(this, "Transacciones", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, transacciones::class.java)
+            startActivity(intent)
         }
 
         btnRealizarMovimiento?.setOnClickListener {
-            Toast.makeText(this, "Realizar movimiento", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, activity_realizarmovimiento::class.java)
+            startActivity(intent)
         }
 
         btnCatalogo?.setOnClickListener {
-            Toast.makeText(this, "Catálogo de libros", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, activity_catalogolibros::class.java)
+            startActivity(intent)
         }
 
         btnAjustes?.setOnClickListener {
-            Toast.makeText(this, "Ajustes de cuenta", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ajustes::class.java)
+            startActivity(intent)
         }
     }
+
 }

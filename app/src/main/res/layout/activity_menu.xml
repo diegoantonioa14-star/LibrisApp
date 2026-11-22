@@ -36,7 +36,7 @@
         android:id="@+id/btnTransacciones"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Transacciones"
+        android:text="Donar Libro"
         android:textColor="#FFFFFF"
         android:backgroundTint="#7D4948"
         android:layout_marginBottom="16dp" />
